@@ -1,3 +1,3 @@
 SuperTest + Chai + Mocha
 
-ESLint
+ESLint + npx
