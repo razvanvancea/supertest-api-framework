@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "chai": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0",
     "npx": "^10.2.2",
     "supertest": "^5.0.0"
   },
@@ -13,15 +12,11 @@
     "eslint": "^7.10.0",
     "eslint-plugin-mocha": "^8.0.0",
     "faker": "^5.1.0",
-    "mochawesome": "^6.1.1",
-    "mochawesome-merge": "^4.2.0"
+    "mochawesome": "^6.1.1"
   },
   "scripts": {
     "eslint": "npx eslint */*.js *.js",
-    "test": "npx mocha tests/*",
-    "merge:reports": "npx mochawesome-merge ./mochawesome-report/*.json > final-report.json",
-    "create:html:report": "npx --reportDir TestReport mochawesome-merge final-report.json",
-    "generate:html:report": "npm run merge:reports && npm run create:html:report"
+    "test": "npx mocha tests/*"
   },
   "author": "Razvan Vancea",
   "license": "ISC"

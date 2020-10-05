@@ -1,12 +1,8 @@
 const { request, expect } = require("../config");
 
 describe("GET employees", function () {
-  const token = "test123";
-
   it("get all employees", async function () {
-    const response = await request
-      .get("/employees")
-      .set(`Authorization`, `Bearer ${token}`);
+    const response = await request.get("/employees");
 
     expect(response.status).to.eql(200);
 
