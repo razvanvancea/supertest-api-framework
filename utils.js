@@ -1,4 +1,4 @@
-const { request, expect } = require("./config");
+const { expect } = require("./config");
 
 const assertGetEmployeesProps = (employeesList) => {
   employeesList.forEach((item) => {
